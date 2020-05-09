@@ -1,0 +1,21 @@
+<div *ngIf="treeData" class="tree">
+    <div 
+        *ngFor="let node of treeData"
+        class="list-group-item"
+        (click)="toggleChild(node); $event.stopPropagation()"
+        [ngClass]="{'show-children': node.showChildren}"
+    >
+        <fa-icon
+            *ngIf="node.posts != 0"
+            [icon]="node.showChildren ? faAngleDown : faAngleRight"
+            size="sm"
+            class="mr-2">
+        </fa-icon>
+        <span>{{ node.groupedBy }} </span>
+        <div class="list-group" *ngIf="node.posts && node.showChildren">
+            <div *ngFor="let post of node.posts" class="list-group-item" [routerLink]="['/posts', post.id]">
+                {{ (post.text | slice:0:50) + '..' }}
+            </div>
+        </div>
+    </div>
+</div>

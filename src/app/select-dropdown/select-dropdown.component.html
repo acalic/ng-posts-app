@@ -1,0 +1,12 @@
+     
+<form [formGroup]="form">
+    <div class="form-group">
+        <label for="dropdown">{{ dropdownLabel }}</label>
+        <select formControlName="dropdown" class="form-control" (change)="changeOption($event)">
+            <option *ngFor="let option of dropdownOptions">{{ option }}</option>
+        </select>
+        <div *ngIf="f.dropdown.touched && f.dropdown.invalid" class="alert alert-danger">
+            <div *ngIf="f.dropdown.errors.required">Please select an option.</div>
+        </div>
+    </div>
+</form>

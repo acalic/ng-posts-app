@@ -1,0 +1,12 @@
+<div class="row">
+    <div class="col-md-6">
+        <app-select-dropdown
+            (selectChange)="groupByChange($event)"
+            [dropdownLabel]= "'Group posts by:'"
+            [dropdownOptions]="groupTypeOptions"
+            [dropdownOptionDefault]="groupType">
+        </app-select-dropdown>
+        <br>
+        <app-tree [treeData]="postsTree"></app-tree>
+    </div>
+</div>
