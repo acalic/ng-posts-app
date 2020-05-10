@@ -1,3 +1,5 @@
+![Drag Racing](src/assets/images/app-banner.png)
+
 # PostsApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.4.
