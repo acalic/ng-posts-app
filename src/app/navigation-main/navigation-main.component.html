@@ -1,12 +1,13 @@
 <header class="bg-dark border-bottom box-shadow px-3 px-md-4 py-3 py-md-0 mb-3">
-    <div class="container d-flex flex-column flex-md-row align-items-center">
-      <h5 class="my-0 mr-md-auto font-weight-normal">
-        <img routerLink="/" width=70 src="https://s3.amazonaws.com/cf-nitroengassets-prod/express/_global/logos/nitro-logo-orange-white.svg" alt="Nitro logo">
-      </h5>      
-      <nav class="my-2 my-md-0 mr-md-3">
-        <a href="#" routerLink="/" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active">Home</a>
-        <a href="#" routerLink="/posts" routerLinkActive="active">Posts</a>
-        <a href="#" routerLink="/posts-tree" routerLinkActive="active">Posts Tree</a>
-      </nav>
-    </div>
-  </header>
+  <div class="container d-flex flex-column flex-md-row align-items-center">
+    <h5 class="my-0 mr-md-auto font-weight-normal text-light font-weight-normal logo-container">
+      <img routerLink="/" width=70 src="assets/images/interface.svg">
+      <span>Posts app</span>
+    </h5>      
+    <nav class="my-2 my-md-0 mr-md-3">
+      <a href="#" routerLink="/" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active">Home</a>
+      <a href="#" routerLink="/posts" routerLinkActive="active">Posts</a>
+      <a href="#" routerLink="/posts-tree" routerLinkActive="active">Posts Tree</a>
+    </nav>
+  </div>
+</header>

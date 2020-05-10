@@ -36,7 +36,6 @@ export class PostsTreeComponent implements OnInit {
           item.week = this.weekNumber(Number(item.time));
       });      
       this.groupPosts();
-      console.log(this.posts$);
     });
   }
 
